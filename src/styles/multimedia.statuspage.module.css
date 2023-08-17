@@ -1,0 +1,24 @@
+.main {
+  height: 40vh;
+  width: 100%;
+  margin-top: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  max-width: 80%;
+  gap: 20px
+}
+
+.text {
+  font-size: 30px;
+}

@@ -1,0 +1,184 @@
+.grid {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, auto));
+  width: 100%;
+  max-width: var(--max-width);
+  padding-top: 5rem;
+}
+
+.section {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.NFT {
+  margin-right: 20px;
+  height: 70px;
+  width: auto;
+}
+
+.title-2-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.row-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-block: 20px;
+  gap: 20px;
+}
+
+.row-companys {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(33%, auto));
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.companys {
+  height: auto;
+  width: 90%;
+}
+
+.tarjeta {
+  margin-right: 20px;
+  height: 500px;
+  width: auto;
+  animation: tarjeta 10s ease-out infinite;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    justify-items: center;
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .NFT {
+    margin-right: 15px;
+    height: 45px;
+    width: auto;
+  }
+
+  .section {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .row-buttons {
+    height: auto;
+    width: 100%;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .tarjeta {
+    margin-top: 40px;
+    margin-right: 0;
+    height: 400px;
+    width: auto;
+  }
+
+  .row-companys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .companys {
+    height: auto;
+    width: 25%;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 601px) and (max-width: 1120px) {
+  .grid {
+    justify-items: center;
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .section {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .row-buttons {
+    justify-content: center;
+  }
+
+  .tarjeta {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+
+  .row-companys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .companys {
+    height: auto;
+    width: 25%;
+  }
+}
+
+@keyframes tarjeta {
+  0% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateZ(-1deg) rotateY(1deg);
+  }
+  75% {
+    transform: rotateZ(2deg) rotateY(-10deg) scale(.98);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  }
+}
