@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+
+ // Add basePath
+  basePath: '/',
+  trailingSlash: true,
+  output: 'export',
+}
 
 const env = {
   COLLECTION: "ETHEREUM:0xee7f09d6444316ee3df063fa43a5ad9d682a0ca2",
