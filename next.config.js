@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 
  // Add basePath
-  basePath: '/',
+  basePath: 'https://cryptospace.global/',
   trailingSlash: true,
   output: 'export',
   env: {
