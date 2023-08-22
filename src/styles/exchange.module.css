@@ -1,0 +1,45 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10%;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../public/fondoex.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        black,
+        85%,
+        transparent
+    );
+}
+
+.mask h2 {
+    margin-top: 100px;
+}
+
+.mask h3 {
+    color: white;
+}
+
+.mask img {
+    width: 40%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.mask p {
+    font-size: 15px;
+}
