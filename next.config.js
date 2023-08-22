@@ -3,9 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
 
  // Add basePath
-  basePath: 'https://cryptospace.global/',
+/*   basePath: 'https://cryptospace.global/',
   trailingSlash: true,
-  output: 'export',
+  output: 'export', */
   env: {
     COLLECTION: "ETHEREUM:0xee7f09d6444316ee3df063fa43a5ad9d682a0ca2",
     API_RARIBLE: "https://api.rarible.org/v0.1",

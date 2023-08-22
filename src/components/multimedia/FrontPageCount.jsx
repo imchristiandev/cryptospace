@@ -45,7 +45,7 @@ export const FrontPage = ({ wallet, objects }) => {
             >
               {objects.map((object) => (
                 <div className={ styles.backgroundNft } key={ object.tokenId }>
-                  <img
+                  <Image
                     src={ object.preview }
                     alt={`Nft - ${ object.tokenId }`}
                     className={ styles.nft }

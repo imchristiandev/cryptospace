@@ -29,7 +29,7 @@ export default function Terms() {
       <p>You agree to comply with all applicable laws regarding your use of the website. You further agree that information provided by you is truthful and accurate to the best of your knowledge.</p>
 
       <h3>8. Indemnification</h3>
-      <p>You agree to indemnify, defend and hold Operator and our partners, employees, and affiliates, harmless from any liability, loss, claim and expense, including reasonable attorney's fees, related to your violation of this Agreement or use of the Site.</p>
+      <p>You agree to indemnify, defend and hold Operator and our partners, employees, and affiliates, harmless from any liability, loss, claim and expense, including reasonable attorney&apos;s fees, related to your violation of this Agreement or use of the Site.</p>
 
       <h3>9. Disclaimer</h3>
       <p>THE INFORMATION ON THIS SITE IS PROVIDED ON AN “AS IS,” “AS AVAILABLE” BASIS. YOU AGREE THAT USE OF THIS SITE IS AT YOUR SOLE RISK. OPERATOR DISCLAIMS ALL WARRANTIES OF ANY KIND, INCLUDING BUT NOT LIMITED TO ANY EXPRESS WARRANTIES, STATUTORY WARRANTIES, AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE EXTENT YOUR JURISDICTION DOES NOT ALLOW LIMITATIONS ON WARRANTIES, THIS LIMITATION MAY NOT APPLY TO YOU. YOUR SOLE AND EXCLUSIVE REMEDY RELATING TO YOUR USE OF THE SITE SHALL BE TO DISCONTINUE USING THE SITE.</p>
@@ -49,7 +49,7 @@ export default function Terms() {
         <li>(c) A description of where the material that you claim is infringing is located on the Site;</li>
         <li>(d) Your address, telephone number, and e-mail address;</li>
         <li>(e) A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</li>
-        <li>(f) A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.</li>
+        <li>(f) A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner&apos;s behalf.</li>
       </ul>
       <p>Our Copyright Agent for Notice of claims of copyright infringement on the Site is Ernesto Huerta, who can be reached as follows:</p>
       <address>

@@ -1,4 +1,5 @@
 import styles from '@/styles/exchange.module.css'
+import Image from 'next/image';
 
 export default function Exchange() {
 return(
@@ -6,8 +7,8 @@ return(
     <div className={ styles.mask }>
       <h2> Online Exchange</h2>
       <h3> comming soon..</h3>
-      <img src='/Mockup.png'/>
-      <p>Due to regulatory constraints, our exchange does not accept US citizens. Only non-US citizens are eligible to participate.</p>
+      <Image src='/Mockup.png'/>
+      <p>Do to the aggressive and uncertain regulatory environment in the United States . Cryptospace does not service U.S citizens .</p>
     </div>
    
   </div>
