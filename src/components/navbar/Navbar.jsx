@@ -28,15 +28,13 @@ export const Navbar = () => {
         
         <div className={styles.rightContainer}>
         <a
-            href="https://cryptomex.online/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/buycrypto"
             className={styles.button}
           >
             <FontAwesomeIcon icon={faCreditCard} className={styles.icon} />
             {' '}Buy Crypto{' '}
-            <img src="/visa.svg" alt="Visa" className={styles.creditCardIcon}/>
-            <img src="/mastercard.svg" alt="Mastercard" className={styles.creditCardIcon}/>
+            <Image src="/visa.svg" alt="Visa" className={styles.creditCardIcon}/>
+            <Image src="/mastercard.svg" alt="Mastercard" className={styles.creditCardIcon}/>
           </a>
 
 
@@ -48,6 +46,9 @@ export const Navbar = () => {
 
         {menuOpen && (
           <ul className={styles.dropdownMenu}>
+            <li className={styles.menuItem}>
+              <a href="/">Home</a>
+            </li>
             <li className={styles.menuItem}>
               <a href="/online-exchange">Online Exchange</a>
             </li>
