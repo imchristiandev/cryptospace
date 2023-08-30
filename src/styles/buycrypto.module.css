@@ -49,4 +49,7 @@
     .mask img{
       width: 80%;
     }
+    .mask h2 {
+    margin-top: 60px;
+}
 }
