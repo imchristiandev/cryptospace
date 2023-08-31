@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCreditCard, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,8 +32,8 @@ export const Navbar = () => {
           >
             <FontAwesomeIcon icon={faCreditCard} className={styles.icon} />
             {' '}Buy Crypto{' '}
-            <Image src="/visa.svg" alt="Visa" className={styles.creditCardIcon}/>
-            <Image src="/mastercard.svg" alt="Mastercard" className={styles.creditCardIcon}/>
+            <img src="/visa.svg" alt="Visa" className={styles.creditCardIcon}/>
+            <img src="/mastercard.svg" alt="Mastercard" className={styles.creditCardIcon}/>
           </a>
 
 

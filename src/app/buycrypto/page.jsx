@@ -7,7 +7,7 @@ return(
     <div className={ styles.mask }>
       <h2>Buy Crypto</h2>
       <h3> coming soon...</h3>
-      <Image src='/visa-master.jpg' alt='visa and mastercard logos'/>
+      <img src='/visa-master.jpg' alt='visa and mastercard logos'/>
     </div>
    
   </div>

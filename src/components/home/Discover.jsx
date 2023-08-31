@@ -19,7 +19,7 @@ export const Discover = () => {
         <div className={ styles.container }>
           <div className={ styles.content }>
             <div className={ styles.title }>
-              Unlock de full story of happyland gummy bears
+              Unlock the full story of happyland gummy bears
             </div>
             <a
               className={ global.btn }
