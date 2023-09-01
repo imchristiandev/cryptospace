@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { useState } from 'react';
-import { variables } from '@/config';
 import { Videos } from './Videos';
 import { Audios } from './Audios';
 
@@ -26,10 +25,18 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        centerMode: false
+      }
+    }
+  ]
 };
 
 async function multimedia (id) {
-  const { url_content_api } = variables;
+  const urlApi = process.env.URL_CONTENT_API
   let myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
   var raw = JSON.stringify({ id });
@@ -42,9 +49,9 @@ async function multimedia (id) {
   };
 
   try {
-    const response = await fetch(url_content_api, requestOptionsPOST);
+    const response = await fetch(urlApi, requestOptionsPOST);
     const result = await response.json();
-    const arrayNames = result.split('\n');
+    const arrayNames = result.split(',');
     return arrayNames;
   } catch (error) {
     console.log('error', error);
@@ -74,7 +81,7 @@ export const FrontPage = ({ wallet, objects }) => {
             >
               {objects.map((object) => (
                 <div className={ styles.backgroundNft } key={ object.tokenId }>
-                  <Image
+                  <img
                     src={ object.preview }
                     alt={`Nft - ${ object.tokenId }`}
                     className={ styles.nft }
@@ -104,6 +111,15 @@ export const FrontPage = ({ wallet, objects }) => {
         <> 
           <Audios audios={data} />
           <Videos videos={data} />
+          <h2 className={ styles.comic }>Comic</h2>
+          <embed 
+            src={`${process.env.URL_COMIC}en.pdf#toolbar=0`}
+            className={ styles.pdf }
+          />
+          <embed 
+            src={`${process.env.URL_COMIC}es.pdf#toolbar=0`}
+            className={ styles.pdf }
+          />
         </>
       : null }
     </div>

@@ -2,16 +2,15 @@
 
 import React, { useState, useRef } from 'react';
 import styles from '../../styles/multimedia.video.module.css';
-import { variables } from '@/config';
 
 
 export const Videos = ({ videos }) => {
-  const { url_content_video } = variables;
+  const urlContent = process.env.URL_CONTENT_VIDEO;
   const [videoRender, setVideoRender] = useState();
   const videoRef = useRef(null);
 
   const multimedia = (name) => {
-    const urlVideo = `${url_content_video}${name}.mp4`;
+    const urlVideo = `${urlContent}${name}.mp4`;
     
     if (videoRef.current) {
       videoRef.current.pause();

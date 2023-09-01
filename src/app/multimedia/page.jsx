@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 
 import styles from '../../styles/page.module.css';
-import { FrontPage } from '@/components/multimedia/FrontPageCount';
+import { FrontPage } from '@/components/multimedia/FrontPage';
 import { StatusPage } from '@/components/multimedia/StatusPage';
 
 async function buscarNfts(owner) {
