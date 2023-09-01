@@ -19,17 +19,8 @@ const GET_GUMMIES = gql`
   }
 `;
 export const FrontPage = () => {
-  // const { loading, error, data } = useQuery(GET_GUMMIES, {
-  //   variables: { page: 1, pageSize: 100 }
-  // });
-
   const { loading, error, data } = useQuery(GET_GUMMIES)
   console.log(data, loading, error)
-
-
-  // console.log("My data 2", data, error)
-  // if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error : {error.message}</p>;
 
   return (
     <div className={ styles.grid }>
