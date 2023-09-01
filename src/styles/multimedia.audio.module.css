@@ -26,12 +26,39 @@
 .audio {
   display: flex;
   flex-direction: column;
-  background-color: rgb(103, 101, 101);
+  background-color: rgb(144, 144, 144);
   padding: 20px;
   border-radius: 20px;
+}
+
+.audio p {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 }
 
 .audio text {
   height: 50px;
   text-align: center;
+}
+
+.control {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .audio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(103, 101, 101);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .control {
+    width: 100%;
+  }
 }

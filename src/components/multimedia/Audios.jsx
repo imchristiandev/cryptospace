@@ -1,27 +1,52 @@
 'use client'
 
-import React, { useState, useRef } from 'react';
+import React, { Fragment } from 'react';
 import styles from '../../styles/multimedia.audio.module.css';
-import { variables } from '@/config';
+import { useQuery, gql } from '@apollo/client';
 
-export const Audios = ({ audios }) => {
-  const audioKey = '?sv=2022-11-02&ss=f&srt=sco&sp=r&se=2024-08-31T11:31:58Z&st=2023-09-01T03:31:58Z&spr=https&sig=FmAYmUEuASD%2F8vW%2BImxJtLf%2F3%2BpRtNDhYCTeEITfbRA%3D';
-  const { url_content_audio } = variables;
+
+const GET_GUMMI = gql`
+  query($tokenId: Int!)  {
+    getGummy(tokenId: $tokenId) {
+      multi
+    }
+  }
+`;
+
+export const Audios = ({ id }) => {
+  let audios = ""; 
+  const urlContent = process.env.URL_CONTENT_AUDIO;
+  const { data } = useQuery(GET_GUMMI, {
+    variables: {
+      tokenId: parseInt(id),
+    },
+  });
+
+  if( data !== undefined ) {
+    const result = data.getGummy.multi;
+    const arrayResult = result.split(',');
+    audios = arrayResult; 
+  }
 
   return (
-    (!error && !loading) &&
-    <div className={ styles.main }>
+    <div id='Audios' className={ styles.main }>
       <h2> Audios </h2>
       <div className={ styles.content }>
-        { audios.map(
+        { audios === ""  ? <Fragment /> 
+        :
+        audios.map(
           (audio) => (
             <div
-              key={audio}
-              className={ styles.audio }
+             key={audio}
+             className={ styles.audio }
             >
               <p>{audio}</p>
-              <audio controls controlsList="nodownload">
-                <source src={`${url_content_audio}${audio}.mp3${audioKey}`} type="audio/mp3" />
+              <audio
+                className={ styles.control }
+                controls
+                controlsList="nodownload"
+              >
+                <source src={`${urlContent}${audio}.mp3`} type="audio/mp3" />
               </audio>
             </div>
         ))}
