@@ -30,8 +30,8 @@ export const Videos = ({ videos }) => {
           { videos.map(
             (video) => (
               <a
-               key={video}
-               onClick={(e) => multimedia(e.target.innerText)}
+                key={video}
+                onClick={(e) => multimedia(e.target.innerText)}
               >
                 {video}
               </a>
