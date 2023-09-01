@@ -15,6 +15,7 @@ const GET_GUMMIES = gql`
       bioma
       multi
       name
+      tokenId
     }
   }
 `;
