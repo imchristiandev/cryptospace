@@ -7,11 +7,13 @@ import { variables } from '@/config';
 
 export const Videos = ({ videos }) => {
   const { url_content_video } = variables;
+  const videoKey = '?sv=2023-01-03&st=2023-09-01T13%3A29%3A58Z&se=2023-09-02T13%3A44%3A58Z&sr=s&sp=r&sig=%2Bil0qZreV41VSy3qOd7JLWwWl2oVMVX9kQCMV0Hh4PY%3D';
+  
   const [videoRender, setVideoRender] = useState();
   const videoRef = useRef(null);
 
   const multimedia = (name) => {
-    const urlVideo = `${url_content_video}${name}.mp4`;
+    const urlVideo = `${url_content_video}${name}.mp4${videoKey}`;
     
     if (videoRef.current) {
       videoRef.current.pause();
@@ -30,8 +32,8 @@ export const Videos = ({ videos }) => {
           { videos.map(
             (video) => (
               <a
-               key={video}
-               onClick={(e) => multimedia(e.target.innerText)}
+                key={video}
+                onClick={(e) => multimedia(e.target.innerText)}
               >
                 {video}
               </a>
