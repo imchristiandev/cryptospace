@@ -6,31 +6,8 @@ import tarjeta from '../../images/tarjetaNft.png';
 import cryptospace from '../../images/cryptospace.png';
 import opensea from '../../images/opensea.png';
 import rarible from '../../images/rarribel.png';
-import { useQuery, gql } from '@apollo/client';
 
-const GET_GUMMIES = gql`
-  query {
-    getGummies(page: 1, pageSize: 100) {
-      id
-      bioma
-      multi
-      name
-      tokenId
-    }
-  }
-`;
 export const FrontPage = () => {
-  // const { loading, error, data } = useQuery(GET_GUMMIES, {
-  //   variables: { page: 1, pageSize: 100 }
-  // });
-
-  const { loading, error, data } = useQuery(GET_GUMMIES)
-  console.log(data, loading, error)
-
-
-  // console.log("My data 2", data, error)
-  // if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error : {error.message}</p>;
 
   return (
     <div className={ styles.grid }>

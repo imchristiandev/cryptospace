@@ -2,8 +2,17 @@
 import React, { useEffect, useState } from 'react';
 
 import styles from '../../styles/page.module.css';
-import { FrontPage } from '@/components/multimedia/FrontPageCount';
+import { FrontPage } from '@/components/multimedia/FrontPage';
 import { StatusPage } from '@/components/multimedia/StatusPage';
+import { ApolloClient, ApolloProvider, InMemoryCache, gql } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'https://test.cryptomex.online/',
+  cache: new InMemoryCache(),
+  fetchOptions: {
+    mode: 'no-cors',
+  },
+});
 
 async function buscarNfts(owner) {
   const collection = process.env.COLLECTION;
@@ -112,7 +121,7 @@ export default function Multimedia() {
   }
 
   return (
-    <>
+    <ApolloProvider client={client}>
       {status === 100 ?
         <div className={styles.main}>
           <FrontPage wallet={wallet} objects={nfts} />
@@ -120,6 +129,6 @@ export default function Multimedia() {
       :
         <StatusPage status={ status } />
       }
-    </>
+    </ApolloProvider>
   )
 }

@@ -26,7 +26,7 @@ export const Navbar = () => {
         </a>
         
         <div className={styles.rightContainer}>
-        <a
+          <a
             href="/buycrypto"
             className={styles.button}
           >
@@ -36,7 +36,12 @@ export const Navbar = () => {
             <img src="/mastercard.svg" alt="Mastercard" className={styles.creditCardIcon}/>
           </a>
 
-
+          <a
+            href="/multimedia"
+            className={styles.button}
+          >
+            {' '}Conect Metamask{' '}
+          </a>
 
           <button className={styles.menuButton} onClick={() => setMenuOpen(!menuOpen)}>
             <FontAwesomeIcon icon={faBars} />
