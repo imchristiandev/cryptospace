@@ -13,12 +13,13 @@ const GET_GUMMI = gql`
   }
 `;
 
-export const Audios = ({ id }) => {
+export const Audios = ({ id }) => { 
+  const audioKey = '?sv=2022-11-02&ss=f&srt=sco&sp=r&se=2024-08-31T11:31:58Z&st=2023-09-01T03:31:58Z&spr=https&sig=FmAYmUEuASD%2F8vW%2BImxJtLf%2F3%2BpRtNDhYCTeEITfbRA%3D';
   let audios = ""; 
   const urlContent = process.env.URL_CONTENT_AUDIO;
   const { data } = useQuery(GET_GUMMI, {
     variables: {
-      tokenId: parseInt(id),
+      tokenId: parseInt(1),
     },
   });
 
@@ -33,8 +34,7 @@ export const Audios = ({ id }) => {
       <h2> Audios </h2>
       <div className={ styles.content }>
         { audios === ""  ? <Fragment /> 
-        :
-        audios.map(
+        : audios.map(
           (audio) => (
             <div
              key={audio}
@@ -49,7 +49,8 @@ export const Audios = ({ id }) => {
                 <source src={`${urlContent}${audio}.mp3`} type="audio/mp3" />
               </audio>
             </div>
-        ))}
+          ))
+        }
       </div>
     </div>
   )

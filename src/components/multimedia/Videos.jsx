@@ -13,6 +13,7 @@ const GET_GUMMI = gql`
 `;
 
 export const Videos = ({ id }) => {
+  const videoKey = '?sv=2023-01-03&st=2023-09-01T13%3A29%3A58Z&se=2023-09-02T13%3A44%3A58Z&sr=s&sp=r&sig=%2Bil0qZreV41VSy3qOd7JLWwWl2oVMVX9kQCMV0Hh4PY%3D';
   const urlContent = process.env.URL_CONTENT_VIDEO;
   const [videoRender, setVideoRender] = useState();
   const videoRef = useRef(null);
