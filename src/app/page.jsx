@@ -27,6 +27,7 @@ client
           bioma
           multi
           name
+          tokenId
         }
       }
     `,
