@@ -10,7 +10,8 @@ import { Discover } from '@/components/home/Discover';
 import { ApolloClient, ApolloProvider, InMemoryCache, gql } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'https://test.cryptomex.online/',
+  // uri: 'https://test.cryptomex.online/',
+  uri: 'http://20.237.38.79:8080/',
   cache: new InMemoryCache(),
   fetchOptions: {
     mode: 'no-cors',
