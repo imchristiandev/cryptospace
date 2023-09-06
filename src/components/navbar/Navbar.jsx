@@ -40,7 +40,7 @@ export const Navbar = () => {
             href="/multimedia"
             className={styles.button}
           >
-            {' '}Conect Metamask{' '}
+            {' '}Connect Metamask{' '}
           </a>
 
           <button className={styles.menuButton} onClick={() => setMenuOpen(!menuOpen)}>

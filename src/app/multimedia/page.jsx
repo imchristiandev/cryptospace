@@ -43,7 +43,6 @@ async function buscarNfts(owner) {
 
   var requestOptionsGET = {
     method: 'GET',
-    headers: myHeaders,
     redirect: 'follow'
   };
 
@@ -52,17 +51,16 @@ async function buscarNfts(owner) {
     const result = await response.json();
     ownerships = result.ownerships;
     await Promise.all(ownerships.map(async (e) => {
-      const itemResponse = await fetch(`${api_rarible}/items/${collection}:${e.tokenId}`, requestOptionsGET);
+      const itemResponse = await fetch(`https://ipfs.io/ipfs/bafybeiek7nj76elf45il2mwgxsft2uzwuxrpafobyy2ecdgxh3yewfs6o4/${e.tokenId}.json`, requestOptionsGET);
       const itemResult = await itemResponse.json();
+      const { edition, name } = itemResult;
       arrayItems.push({
-        id: itemResult.id,
-        blockchain: itemResult.blockchain,
-        collection: itemResult.collection,
-        contract: itemResult.contract,
-        tokenId: itemResult.tokenId,
-        name: itemResult.meta.name,
-        description: itemResult.meta.description,
-        preview: itemResult.meta.content[3].url,
+        id: edition,
+        blockchain: 'Ethereum',
+        contract: '0xEe7f09d6444316EE3df063Fa43a5AD9D682a0ca2',
+        tokenId: edition,
+        name,
+        preview: `https://ipfs.io/ipfs/bafybeiebjct5sqcehbe3someaclfam5jumjjrgebpfgn2iq54qqut6exay/${e.tokenId}.jpg`
       });
     }));
   } catch (error) {
