@@ -11,6 +11,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from 'react';
 import { Videos } from './Videos';
 import { Audios } from './Audios';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function recortarWallet ( wallet ) {
   const longitud = wallet.length;
@@ -70,7 +73,7 @@ export const FrontPage = ({ wallet, objects }) => {
                       className={ globlal.btn } 
                       onClick={() => {setId(object.tokenId); setContent(true)}}
                     >
-                      ver multimedia
+                      Access Multimedia
                     </a>
                   </div>
                 ))}
@@ -83,11 +86,32 @@ export const FrontPage = ({ wallet, objects }) => {
           <> 
             <Audios id={id} />
             <Videos id={id} />
-            <h2 className={ styles.comic }>Comic</h2>
+            <h2 className={ styles.comic }>The Great Gummy Escape</h2>
+            <div className={styles.horizontalGrid}>
+              <h3 className={ styles.comicLg }>English Version</h3>
+              <a 
+                href={`${process.env.URL_COMIC}es.pdf`}  
+                download 
+                className={styles.comicbutton}
+              >
+                ⬇ Download Comic
+              </a>
+            </div>
             <embed 
               src={`${process.env.URL_COMIC}en.pdf#toolbar=0`}
               className={ styles.pdf }
             />
+            <h2 className={ styles.comic }>La Gran Huida Gomosa</h2>
+            <div className={styles.horizontalGrid}>
+              <h3 className={ styles.comicLg }>Version Español</h3>
+              <a 
+                href={`${process.env.URL_COMIC}es.pdf`}  
+                download 
+                className={styles.comicbutton}
+              >
+                ⬇ Descarga Comic
+              </a>
+            </div>
             <embed 
               src={`${process.env.URL_COMIC}es.pdf#toolbar=0`}
               className={ styles.pdf }
