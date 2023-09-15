@@ -19,7 +19,7 @@ export const Audios = ({ id }) => {
   const urlContent = process.env.URL_CONTENT_AUDIO;
   const { data } = useQuery(GET_GUMMI, {
     variables: {
-      tokenId: parseInt(1),
+      tokenId: parseInt(id),
     },
   });
 
@@ -27,6 +27,7 @@ export const Audios = ({ id }) => {
     const result = data.getGummy.multi;
     const arrayResult = result.split(',');
     audios = arrayResult; 
+    console.info(audios);
   }
 
   return (

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { Fragment, useState, useRef } from 'react';
+import React, { Fragment, useState, useRef, useEffect } from 'react';
 import styles from '../../styles/multimedia.video.module.css';
 import { useQuery, gql } from '@apollo/client';
 
@@ -18,6 +18,13 @@ export const Videos = ({ id }) => {
   const [videoRender, setVideoRender] = useState();
   const videoRef = useRef(null);
 
+  useEffect(() => {
+    const videoIsLoaded = videoRef.current.firstChild.src
+    if (videoIsLoaded) {
+      videoRef.current.play();
+    }
+  }, [videoRender])
+  
   let videos = ""; 
   const { data } = useQuery(GET_GUMMI, {
     variables: {
@@ -44,13 +51,11 @@ export const Videos = ({ id }) => {
 
   return (
     <div className={ styles.main }>
-      <h2> Videos </h2>
+      <h2> Multimedia </h2>
       <div className={ styles.content }>
         <div className={ styles.list }>
           <p> Content list </p>
-          { videos === ""  ? 
-              <Fragment /> 
-            : videos.map(
+          { videos && videos.map(
               (video) => (
                 <a
                  key={video}

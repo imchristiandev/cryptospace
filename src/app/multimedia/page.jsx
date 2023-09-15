@@ -64,7 +64,7 @@ async function buscarNfts(owner) {
       });
     }));
   } catch (error) {
-    console.log('error', error);
+    console.error('error', error);
   }
   return arrayItems;
 }
@@ -102,7 +102,7 @@ export default function Multimedia() {
       const account = accounts[0];
       accountHandling(account);
     } catch (error) {
-      console.log(error)
+      console.error(error)
     }
   }
 

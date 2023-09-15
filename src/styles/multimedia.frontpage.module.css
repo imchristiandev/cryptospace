@@ -8,13 +8,10 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  background-image: url('../images/background-mm.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 80%;
+  grid-template-columns: repeat(1,1fr);
+  background: none;
+  justify-content: center;
+  justify-items: center;
 }
 
 .gummy {
@@ -48,12 +45,16 @@
 
 .content {
   margin-top: 10px;
-  background-color: #2F2F34;
+  background-color: #060606;
   width: 400px;
   border-radius: 30px;
   padding-block: 20px;
   padding-inline: 30px;
   margin-bottom: 20px;
+}
+
+.multimedia {
+  width: 100%;
 }
 
 .backgroundNft {
@@ -62,10 +63,11 @@
   background-position: center;
   background-repeat: no-repeat;
   height: auto;
-  width: 100%;
-  max-width: 300px;
-  padding: 18px;
+  /* width: 100%;
+  max-width: 300px; */
+  padding: 10%;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .backgroundNft a {
@@ -75,7 +77,7 @@
 .nft {
   width: 100%;
   height: auto;
-  border-radius: 25px;
+  border-radius: 12px;
 }
 
 .name {
@@ -137,7 +139,39 @@
   font-weight: 600;
 }
 
-@media (max-width: 800px) {
+.grid {
+  grid-template-columns: repeat(1,1fr);
+  background: none;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media screen and (min-width: 720px) {
+  .grid {
+    display: flex;
+    background-image: url('../images/background-mm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    align-items: flex-end;
+    gap: 40px
+  }
+  .gummy {
+    width: 20%;
+    display: none;
+  }
+  .content {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .colum-right {
+    width: calc(100% - 80px);
+  }
+  
+}
+
+/* @media (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(1,1fr);
     background: none;
@@ -146,7 +180,7 @@
   }
 
   .gummy {
-    width: 60%;
+    width: 100%;
     height: auto;
   }
 
@@ -154,4 +188,4 @@
     margin-top: 10px;
     width: 100%;
   }
-}
+} */
