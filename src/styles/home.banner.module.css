@@ -1,0 +1,167 @@
+.grid {
+  max-width  : var(--max-width);
+  padding-top: 5rem;
+  width      : 100%;
+}
+
+.backgroundContainer {
+  display            : flex;
+  flex-direction     : row;
+  justify-content    : space-between;
+  align-items        : center;
+  background-image   : url('../images/banner-cryptospace.svg');
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  background-position: center;
+  height             : 275px;
+  width              : 100%;
+  max-width          : 1920px;
+}
+
+.sectionLeft {
+  width          : 50%;
+  padding-left   : 5rem;
+  padding-right  : 2rem;
+  height         : 100%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  gap            : 30px;
+}
+
+.sectionRight {
+  width          : 50%;
+  padding-left   : 2rem;
+  padding-right  : 5rem;
+  height         : 100%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  position       : relative;
+}
+
+.title {
+  font-size  : 30px;
+  font-weight: 700;
+  color      : var(--color-title);
+}
+
+.rowItems {
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+  gap           : 24px;
+}
+
+.btn {
+  width           : 192px;
+  height          : 56px;
+  border-radius   : 10px;
+  background-color: var(--color-title);
+  color           : #302583;
+  font-size       : 20px;
+  font-weight     : 700;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  cursor          : pointer;
+  transition      : all 0.3s ease-in-out;
+  animation       : scale 3s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.btn:hover {
+  background-color: #000;
+  color           : var(--color-title);
+}
+
+.sectionLeft ul {
+  padding: 0;
+  margin : 0;
+}
+
+.sectionLeft ul li {
+  font-size  : 12px;
+  font-weight: 600;
+  color      : #FFF8AF;
+}
+
+.sectionLeft ul li::marker {
+  color    : #FFCC29;
+  font-size: 20px;
+}
+
+.cardsBearsImage {
+  position : absolute;
+  bottom   : -8px;
+  animation: skeletonEffect 10s ease-in-out infinite;
+}
+
+@keyframes skeletonEffect {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1120px) {
+  .backgroundContainer {
+    flex-direction  : column;
+    height          : 550px;
+    width           : 100%;
+    background-image: url('../images/banner-cryptospace-mobile.svg');
+  }
+
+  .sectionLeft,
+  .sectionRight {
+    width      : 100%;
+    align-items: center;
+    padding    : 0 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .backgroundContainer {
+    margin-bottom: 24px;
+  }
+
+  .rowItems {
+    flex-direction: column-reverse;
+    gap           : 16px;
+  }
+
+  .title {
+    font-size : 24px;
+    margin-top: 32px;
+  }
+
+  .btn {
+    margin-top: 32px;
+  }
+
+  .cardsBearsImage {
+    width : 100%;
+    height: auto;
+  }
+
+}
