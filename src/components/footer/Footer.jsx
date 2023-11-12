@@ -2,7 +2,7 @@ import styles from "../../styles/footer.module.css";
 
 export const Footer = () => {
   return (
-    <div className={ styles.main }>
+    <footer className={ styles.main }>
       <div className={ styles.content }>
         <div className={ styles.contactTitle }>
           CONTACT.
@@ -31,6 +31,6 @@ export const Footer = () => {
           know the policy and data privacy
         </a>
       </div>
-    </div>
+    </footer>
   )
 }

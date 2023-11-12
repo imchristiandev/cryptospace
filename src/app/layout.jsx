@@ -1,7 +1,11 @@
+'use client'
+/* eslint-disable @next/next/no-sync-scripts */
+
 import '../styles/globals.css';
 import { Inter } from 'next/font/google';
 import { Navbar } from '@/components/navbar/Navbar';
 import { Footer } from '@/components/footer/Footer';
+import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,14 +15,34 @@ export const metadata = {
 }
 
 export default function RootLayout({children}) {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.test-simplexcc.com/sdk/v1/js/sdk.js';
+    script.onload = function() {
+      window.simplexAsyncFunction = function () {
+        Simplex.init({public_key: '<partner_public_key>'})
+      }
+    };
+    document.head.appendChild(script);
+  }, [])
+
   return (
     <html lang="es">
+      <head>
+        <script>
+          
+        </script>
+
+      </head>
       <body className={inter.className}>
         <Navbar />
-        <div>
-          {children}
-        </div>
+        {children}
         <Footer />
+        <script src='https://iframe.sandbox.test-simplexcc.com/form-sdk.js' type="text/javascript"></script>
+        <script>
+            window.simplex.createForm();
+        </script>
       </body>
     </html>
   )

@@ -10,7 +10,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className={styles.main}>
+    <header className={styles.main}>
       <div className={styles.navBar}>
         <a
           href="/"
@@ -65,6 +65,6 @@ export const Navbar = () => {
           </ul>
         )}
       </div>
-    </div>
+    </header>
   )
 }

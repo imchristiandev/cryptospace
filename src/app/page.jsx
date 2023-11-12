@@ -11,7 +11,7 @@ import Banner from '@/components/home/Banner';
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <main className={styles.main}>
       <Banner />
       <FrontPage />
       <Content />
@@ -19,6 +19,6 @@ export default function Home() {
       <Video />
       <Comunity />
       <Discover />
-    </div>
+    </main>
   )
 }

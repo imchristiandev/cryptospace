@@ -2,7 +2,7 @@ import styles from '../../styles/terms.module.css';
 
 export default function Terms() {
   return (
-    <div className={ styles.main }>
+    <main className={ styles.main }>
     <h2>Terms and Conditions</h2>
     <p><strong>Huerta Consulting Services LLC</strong>, a Limited Liability Company doing business as <strong>Cryptospace</strong></p>
       <p>Welcome to our website. This site is maintained as a service to our customers. By using this site, you agree to comply with and be bound by the following terms and conditions of use. Please review these terms and conditions carefully. If you do not agree to these terms and conditions, you should not use this site.</p>
@@ -63,6 +63,6 @@ export default function Terms() {
       
       <h3>14. Severability</h3>
       <p>If any provision of this Agreement shall be adjudged by any court of competent jurisdiction to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that this Agreement will otherwise remain in full force and effect.</p>
-    </div>
+    </main>
   );
 }

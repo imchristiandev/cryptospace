@@ -2,7 +2,7 @@ import styles from '../../styles/policy.module.css';
 
 export default function Policy() {
   return (
-    <div className={ styles.main }>
+    <main className={ styles.main }>
     <h2>Privacy Policy</h2>
     <p> 1.Important information</p> 
     <p>
@@ -425,6 +425,6 @@ export default function Policy() {
     <p>
       18.2 In the event that you wish to make a complaint about how we Process your Personal Data, please contact us in the first instance at  info@CSapp.com and we will attempt to handle your request as soon as possible. This is without prejudice to your right to launch a claim with the data protection supervisory authority in the country in which you live or work where you think we have violated Data Protection Law.
     </p>
-  </div>
+  </main>
   )
 }
