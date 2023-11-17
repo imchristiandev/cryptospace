@@ -13,7 +13,7 @@ export default function Banner() {
             Transfer your USDT & USDC to <br /> your card and spend globally
           </h3>
           <div className={styles.rowItems}>
-            <Link className={styles.btn} href="https://prestabit.space/?nickname=Puglord/" target="blank">
+            <Link className={styles.btn} href="https://prestabit.space/?nickname=Ernesto/" target="blank">
               Sign up
             </Link>
             <ul className={styles.list}>
