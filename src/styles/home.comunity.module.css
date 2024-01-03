@@ -1,31 +1,31 @@
 .main {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(50%,auto));
-    width: 100%;
-    max-width: var(--max-width);
-    margin-top: var(--gap-secction-desktop);
-    padding-inline: 50px;
+  display              : grid;
+  grid-template-columns: repeat(2, minmax(50%, auto));
+  width                : 100%;
+  max-width            : var(--max-width);
+  margin-top           : var(--gap-secction-desktop);
+  padding-inline       : 50px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: center;
-  justify-items: center;
-  align-items: flex-end;
-  gap: 10px;
+  justify-items  : center;
+  align-items    : flex-end;
+  gap            : 10px;
 }
 
-.content a{
+.content a {
   margin-top: 20px;
 }
 
 .contentImg {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
+  justify-items  : center;
+  align-items    : center;
 }
 
 .title {
@@ -37,17 +37,17 @@
 }
 
 .image {
-    width: 60%;
-    height: auto;
+  width : 60%;
+  height: auto;
 }
 
 @media (max-width: 600px) {
   .main {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin-top: 40px;
+    align-items   : center;
+    width         : 90%;
+    margin-top    : 40px;
   }
 
   .content {
@@ -65,11 +65,11 @@
 
 @media (min-width: 601px) and (max-width: 1120px) {
   .main {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin-top: 40px;
+    align-items   : center;
+    width         : 90%;
+    margin-top    : 40px;
   }
 
   .content {

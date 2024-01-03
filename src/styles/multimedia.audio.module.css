@@ -1,12 +1,12 @@
 .main {
-  height: auto;
-  width: 100%;
-  max-width: var(--max-width);
-  color: white;
-  display: flex;
+  height        : auto;
+  width         : 100%;
+  max-width     : var(--max-width);
+  color         : white;
+  display       : flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 10rem;
+  align-items   : center;
+  margin-top    : 10rem;
 }
 
 .main h2 {
@@ -14,30 +14,30 @@
 }
 
 .content {
-  height: auto;
-  width: 80%;
-  display: flex;
+  height        : auto;
+  width         : 80%;
+  display       : flex;
   flex-direction: row;
-  gap: 20px;
-  padding-block: 30px;
-  overflow-x: scroll;
+  gap           : 20px;
+  padding-block : 30px;
+  overflow-x    : scroll;
 }
 
 .audio {
-  display: flex;
-  flex-direction: column;
+  display         : flex;
+  flex-direction  : column;
   background-color: rgb(144, 144, 144);
-  padding: 20px;
-  border-radius: 20px;
+  padding         : 20px;
+  border-radius   : 20px;
 }
 
 .audio p {
-  color: rgb(0, 0, 0);
+  color    : rgb(0, 0, 0);
   font-size: 15px;
 }
 
 .audio text {
-  height: 50px;
+  height    : 50px;
   text-align: center;
 }
 
@@ -51,11 +51,11 @@
   }
 
   .audio {
-    display: flex;
-    flex-direction: column;
+    display         : flex;
+    flex-direction  : column;
     background-color: rgb(103, 101, 101);
-    padding: 20px;
-    border-radius: 20px;
+    padding         : 20px;
+    border-radius   : 20px;
   }
 
   .control {

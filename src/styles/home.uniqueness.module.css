@@ -1,98 +1,98 @@
 .main {
-  justify-items: center;
-  display: grid;
+  justify-items        : center;
+  display              : grid;
   grid-template-columns: repeat(2, minmax(50%, auto));
-  width: 100%;
-  max-width: var(--max-width);
-  margin-top: var(--gap-secction-desktop);
+  width                : 100%;
+  max-width            : var(--max-width);
+  margin-top           : var(--gap-secction-desktop);
 }
 
 .colum {
-  display: flex;
-  width: 70%;
-  height: 100%;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  display        : flex;
+  width          : 70%;
+  height         : 100%;
+  flex-direction : column;
+  flex-wrap      : nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items    : flex-start;
 }
 
 .title-part-2 {
-  font-size: var(--font-size-title);
-  font-weight: bold;
-  font-style: normal;
-  color: var(--color-title);
+  font-size   : var(--font-size-title);
+  font-weight : bold;
+  font-style  : normal;
+  color       : var(--color-title);
   padding-left: 8rem;
 }
 
 .nft {
-  height: 80px;
-  width: auto;
+  height     : 80px;
+  width      : auto;
   margin-left: 15px;
 }
 
 .row-title-part-1 {
-  display: flex;
-  flex-direction: row;
+  display        : flex;
+  flex-direction : row;
   justify-content: left;
 }
 
 .row-buttons {
   margin-top: 40px;
-  height: 90px;
+  height    : 90px;
 }
 
 .image {
   height: auto;
-  width: 100%;
+  width : 100%;
 }
 
 @media (max-width: 600px) {
   .image {
-    height: auto;
-    width: 80%;
+    height    : auto;
+    width     : 80%;
     margin-top: 40px;
   }
 
   .main {
-    justify-items: center;
-    display: flex;
+    justify-items : center;
+    display       : flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    align-items: center;
+    width         : 100%;
+    margin-top    : 10px;
+    align-items   : center;
   }
 
   .colum {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display        : flex;
+    width          : 90%;
+    flex-direction : column;
+    flex-wrap      : nowrap;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
   }
-  
+
   .title-part-2 {
-    font-size: 40px;
+    font-size  : 40px;
     font-weight: bold;
-    font-style: normal;
-    color: var(--color-title);
-    text-align: center;
-    padding: 0;
-    width: 100%;
+    font-style : normal;
+    color      : var(--color-title);
+    text-align : center;
+    padding    : 0;
+    width      : 100%;
   }
 
   .nft {
-    height: 45px;
-    width: auto;
+    height     : 45px;
+    width      : auto;
     margin-left: 15px;
   }
 
   .row-title-part-1 {
-    display: flex;
-    flex-direction: row;
+    display        : flex;
+    flex-direction : row;
     justify-content: center;
-    width: 100%;
+    width          : 100%;
   }
 
   .text {
@@ -103,40 +103,40 @@
 
 @media (min-width: 601px) and (max-width: 1120px) {
   .image {
-    height: auto;
-    width: 80%;
+    height    : auto;
+    width     : 80%;
     margin-top: 40px;
   }
 
   .main {
-    justify-items: center;
-    display: flex;
+    justify-items : center;
+    display       : flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    align-items: center;
+    width         : 100%;
+    margin-top    : 10px;
+    align-items   : center;
   }
 
   .colum {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display        : flex;
+    width          : 90%;
+    flex-direction : column;
+    flex-wrap      : nowrap;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
   }
-  
+
   .title-part-2 {
     text-align: center;
-    padding: 0;
-    width: 100%;
+    padding   : 0;
+    width     : 100%;
   }
 
   .row-title-part-1 {
-    display: flex;
-    flex-direction: row;
+    display        : flex;
+    flex-direction : row;
     justify-content: center;
-    width: 100%;
+    width          : 100%;
   }
 
   .text {

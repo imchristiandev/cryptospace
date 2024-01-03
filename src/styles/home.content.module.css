@@ -1,63 +1,63 @@
 .main {
-  margin-top: var(--gap-secction-desktop);
-  display: flex;
-  flex-direction: column;
+  margin-top     : var(--gap-secction-desktop);
+  display        : flex;
+  flex-direction : column;
   justify-content: flex-end;
-  width: 100%;
-  max-width: var(--max-width);
+  width          : 100%;
+  max-width      : var(--max-width);
 }
 
 .background {
-  height: 275px;
-  position: absolute;
-  width: 90%;
-  max-width: var(--max-width);
+  height       : 275px;
+  position     : absolute;
+  width        : 90%;
+  max-width    : var(--max-width);
   margin-bottom: 40px;
-  z-index: -1;
+  z-index      : -1;
 }
 
 .grid {
-  justify-items: center;
-  display: grid;
+  justify-items        : center;
+  display              : grid;
   grid-template-columns: repeat(2, minmax(50%, auto));
-  width: 100%;
-  max-width: var(--max-width);
+  width                : 100%;
+  max-width            : var(--max-width);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: flex-end;
-  padding-right: 30%;
+  padding-right  : 30%;
 }
 
 .content {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height         : 50%;
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
   justify-content: center;
-  margin-bottom: 40px;
-  gap: 20px;
+  margin-bottom  : 40px;
+  gap            : 20px;
 }
 
 .title {
-  color: #ffffff;
+  color      : #ffffff;
   font-family: 'Montserrat', Helvetica;
-  font-size: 40px;
-  font-style: normal;
+  font-size  : 40px;
+  font-style : normal;
   font-weight: bold;
-  text-align: center;
+  text-align : center;
 }
 
 .gummy {
   height: 550px;
-  width: auto;
+  width : auto;
 }
 
-.image{
+.image {
   height: 100%;
-  width: 100%;
+  width : 100%;
 }
 
 @media (max-width: 600px) {
@@ -66,27 +66,27 @@
   }
 
   .grid {
-    justify-items: center;
-    display: flex;
+    justify-items : center;
+    display       : flex;
     flex-direction: column;
   }
-  
+
   .container {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: flex-end;
-    padding-block: 40px;
-    padding-inline: 20px;
+    padding-block  : 40px;
+    padding-inline : 20px;
   }
 
   .background {
     height: 85%;
-    width: 100%;
+    width : 100%;
   }
 
   .gummy {
     height: auto;
-    width: 100%;
+    width : 100%;
   }
 
 }
@@ -97,27 +97,27 @@
   }
 
   .grid {
-    justify-items: center;
-    display: flex;
+    justify-items : center;
+    display       : flex;
     flex-direction: column;
   }
-  
+
   .container {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: flex-end;
-    padding-block: 40px;
-    padding-inline: 20px;
+    padding-block  : 40px;
+    padding-inline : 20px;
   }
 
   .background {
     height: 85%;
-    width: 100%;
+    width : 100%;
   }
 
   .gummy {
     height: auto;
-    width: 100%;
+    width : 100%;
   }
 
 }

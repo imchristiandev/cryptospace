@@ -1,71 +1,71 @@
 .main {
-  width: 100%;
-  max-width: var(--max-width);
-  display: flex;
+  width         : 100%;
+  max-width     : var(--max-width);
+  display       : flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
+  align-items   : center;
+  margin-top    : 30px;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  background-image: url('../images/background-mm.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 80%;
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image     : url('../images/background-mm.png');
+  background-size      : 100% 100%;
+  background-repeat    : no-repeat;
+  background-position  : center;
+  width                : 80%;
 }
 
 .gummy {
-  width: auto;
+  width : auto;
   height: 100%;
 }
 
 .colum-right {
-  display: flex;
+  display       : flex;
   flex-direction: column;
-  align-items: center;
+  align-items   : center;
 }
 
 .title {
   padding-top: 40px;
-  text-align: center;
-  font-size: 40px;
+  text-align : center;
+  font-size  : 40px;
   font-weight: bold;
 }
 
 .sub-title {
-  font-size: 30px;
+  font-size  : 30px;
   font-weight: 900;
 }
 
 .text {
-  font-weight: bold;
-  color: #fff;
+  font-weight  : bold;
+  color        : #fff;
   margin-bottom: 15px;
 }
 
 .content {
-  margin-top: 10px;
+  margin-top      : 10px;
   background-color: #2F2F34;
-  width: 400px;
-  border-radius: 30px;
-  padding-block: 20px;
-  padding-inline: 30px;
-  margin-bottom: 20px;
+  width           : 400px;
+  border-radius   : 30px;
+  padding-block   : 20px;
+  padding-inline  : 30px;
+  margin-bottom   : 20px;
 }
 
 .backgroundNft {
-  background-image: url(../images/fondo-tarjeta-nft.png);
-  background-size: 93% 95%;
+  background-image   : url(../images/fondo-tarjeta-nft.png);
+  background-size    : 93% 95%;
   background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
-  width: 100%;
-  max-width: 300px;
-  padding: 18px;
-  margin-top: 20px;
+  background-repeat  : no-repeat;
+  height             : auto;
+  width              : 100%;
+  max-width          : 300px;
+  padding            : 18px;
+  margin-top         : 20px;
 }
 
 .backgroundNft a {
@@ -73,22 +73,22 @@
 }
 
 .nft {
-  width: 100%;
-  height: auto;
+  width        : 100%;
+  height       : auto;
   border-radius: 25px;
 }
 
 .name {
-  font-size: 12px;
-  color: #000;
+  font-size  : 12px;
+  color      : #000;
   font-weight: bold;
-  text-align: center;
+  text-align : center;
 }
 
 .description {
-  font-size: 12px;
-  color: #000;
-  font-weight: bold;
+  font-size    : 12px;
+  color        : #000;
+  font-weight  : bold;
   margin-bottom: 10px;
 }
 
@@ -97,61 +97,62 @@
 }
 
 .pdf {
-  width: 60%;
-  height: 155vh;
-  margin-top: 2rem;
+  width        : 60%;
+  height       : 155vh;
+  margin-top   : 2rem;
   border-radius: 15px;
 }
 
 .horizontalGrid {
-  display: grid;
+  display              : grid;
   grid-template-columns: auto auto;
-  align-items: center;
-  gap: 20px;  /* Add gap between grid items */
-  padding: 1%;
+  align-items          : center;
+  gap                  : 20px;
+  /* Add gap between grid items */
+  padding              : 1%;
 }
 
 
 .comic {
-  margin-top: 6rem;
-  background: url(../images/FondoComic.jpeg);
-  background-repeat: none;
-  background-size: cover;
+  margin-top         : 6rem;
+  background         : url(../images/FondoComic.jpeg);
+  background-repeat  : none;
+  background-size    : cover;
   background-position: center;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  padding: 1%;
-  border-radius: 10px;
+  text-shadow        : black 0.1em 0.1em 0.2em;
+  padding            : 1%;
+  border-radius      : 10px;
 }
 
-.comicLg{
-  color: white;
+.comicLg {
+  color     : white;
   margin-top: 5px;
 }
 
 .comicbutton {
-  color: white;
-  text-align: center;
+  color           : white;
+  text-align      : center;
   background-color: green;
-  border-radius: 5px;
-  padding: 5px;
-  font-weight: 600;
+  border-radius   : 5px;
+  padding         : 5px;
+  font-weight     : 600;
 }
 
 @media (max-width: 800px) {
   .grid {
-    grid-template-columns: repeat(1,1fr);
-    background: none;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    background           : none;
+    justify-content      : center;
+    justify-items        : center;
   }
 
   .gummy {
-    width: 60%;
+    width : 60%;
     height: auto;
   }
 
   .content {
     margin-top: 10px;
-    width: 100%;
+    width     : 100%;
   }
 }

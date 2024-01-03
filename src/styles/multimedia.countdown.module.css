@@ -1,83 +1,83 @@
 .main {
-  width: 100%;
-  max-width: var(--max-width);
-  display: flex;
+  width         : 100%;
+  max-width     : var(--max-width);
+  display       : flex;
   flex-direction: column;
-  align-items: center;
+  align-items   : center;
 }
 
 .main p {
-  font-size: 20px;
-  color: white;
+  font-size     : 20px;
+  color         : white;
   text-transform: uppercase;
-  font-weight: bolder;
-  text-align: center;
+  font-weight   : bolder;
+  text-align    : center;
 }
 
 .displayContent {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
+  display        : flex;
+  flex-direction : row;
+  gap            : 10px;
+  align-items    : center;
   justify-content: center;
-  margin-top: 15px;
+  margin-top     : 15px;
 }
 
-.displayContent text{
+.displayContent text {
   font-size: 15px;
-  color: white;
+  color    : white;
 
 }
 
 .display {
-  display: flex;
+  display       : flex;
   flex-direction: column;
-  color: white;
-  align-items: center;
+  color         : white;
+  align-items   : center;
 }
 
 .display text {
-  color: rgb(var(--callout-rgb));
-  font-size: 15px;
+  color      : rgb(var(--callout-rgb));
+  font-size  : 15px;
   font-weight: bold;
 }
 
-.display span{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  align-items: center;
+.display span {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  color           : white;
+  align-items     : center;
   background-color: rgba(255, 255, 255, 0.529);
-  height: 90px;
-  width: 70px;
-  font-size: 40px;
-  border-radius: 20px;
+  height          : 90px;
+  width           : 70px;
+  font-size       : 40px;
+  border-radius   : 20px;
 }
 
 
 @media (max-width: 600px) {
-  .display span{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    align-items: center;
+  .display span {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    color           : white;
+    align-items     : center;
     background-color: rgba(255, 255, 255, 0.529);
-    height: 90px;
-    width: 60px;
-    font-size: 30px;
-    border-radius: 20px;
+    height          : 90px;
+    width           : 60px;
+    font-size       : 30px;
+    border-radius   : 20px;
   }
 
   .display text {
-    color: rgb(var(--callout-rgb));
-    font-size: 10px;
+    color      : rgb(var(--callout-rgb));
+    font-size  : 10px;
     font-weight: bold;
   }
 
   .main p {
     font-size: 25px;
-    color: white;
+    color    : white;
   }
 }

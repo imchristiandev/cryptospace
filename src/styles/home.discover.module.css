@@ -1,69 +1,69 @@
 .main {
-  margin-top: var(--gap-secction-desktop);
-  display: flex;
-  flex-direction: column;
+  margin-top     : var(--gap-secction-desktop);
+  display        : flex;
+  flex-direction : column;
   justify-content: flex-end;
-  width: 80%;
-  max-width: var(--max-width);
+  width          : 80%;
+  max-width      : var(--max-width);
 }
 
 .background {
-  height: 450px;
-  position: absolute;
-  width: 80%;
+  height   : 450px;
+  position : absolute;
+  width    : 80%;
   max-width: var(--max-width);
-  z-index: -1;
+  z-index  : -1;
 }
 
 .grid {
-  justify-items: center;
-  display: grid;
+  justify-items        : center;
+  display              : grid;
   grid-template-columns: repeat(2, minmax(50%, auto));
-  width: 100%;
-  max-width: var(--max-width);
+  width                : 100%;
+  max-width            : var(--max-width);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: flex-end;
 }
 
 .content {
-  height: 450px;
-  display: flex;
-  padding: 3rem;
-  flex-direction: column;
-  align-items: center;
+  height         : 450px;
+  display        : flex;
+  padding        : 3rem;
+  flex-direction : column;
+  align-items    : center;
   justify-content: center;
-  gap:20px;
+  gap            : 20px;
 }
 
 .title {
-  color: #ffffff;
+  color      : #ffffff;
   font-family: 'Montserrat', Helvetica;
-  font-size: 50px;
-  font-style: normal;
+  font-size  : 50px;
+  font-style : normal;
   font-weight: bold;
-  text-align: center;
+  text-align : center;
 }
 
 .gummy {
   height: 650px;
-  width: auto;
+  width : auto;
 }
 
 @media (max-width: 600px) {
   .main {
     margin-top: 40px;
-    position: static;
+    position  : static;
   }
 
   .grid {
-    justify-items: center;
-    display: flex;
+    justify-items : center;
+    display       : flex;
     flex-direction: column;
-    width: 100%;
+    width         : 100%;
   }
 
   .background {
@@ -71,29 +71,29 @@
   }
 
   .title {
-    font-size: 40px;
-    font-style: normal;
+    font-size  : 40px;
+    font-style : normal;
     font-weight: bold;
-    text-align: center;
+    text-align : center;
   }
 
   .gummy {
     height: auto;
-    width: 100%;
+    width : 100%;
   }
 }
 
 @media (min-width: 601px) and (max-width: 1120px) {
   .main {
     margin-top: 40px;
-    position: static;
+    position  : static;
   }
 
   .grid {
-    justify-items: center;
-    display: flex;
+    justify-items : center;
+    display       : flex;
     flex-direction: column;
-    width: 100%;
+    width         : 100%;
   }
 
   .background {
@@ -101,14 +101,14 @@
   }
 
   .title {
-    font-size: 40px;
-    font-style: normal;
+    font-size  : 40px;
+    font-style : normal;
     font-weight: bold;
-    text-align: center;
+    text-align : center;
   }
 
   .gummy {
     height: auto;
-    width: 100%;
+    width : 100%;
   }
 }
