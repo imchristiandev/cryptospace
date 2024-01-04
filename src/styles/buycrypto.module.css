@@ -66,6 +66,11 @@
     display  : block;
     font-size: 16px;
     margin   : 0 0 20px;
+    color: #8C8C8C;
+}
+
+.simplex__label::placeholder {
+    color: #8C8C8C;
 }
 
 .simplex__input {

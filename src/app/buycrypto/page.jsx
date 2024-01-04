@@ -7,7 +7,7 @@ return(
   <SimplexProvider>
     <main className={ styles['simplex__main'] }>
       <section className={ styles['simplex__mask'] }>
-        <form action="" className={ styles['simplex__form'] }>
+        <div action="" className={ styles['simplex__form'] }>
           <header className={ styles['simplex__header'] }>
             <h1 className={ styles['simplex__title'] }>Buy Cryptocurrency</h1> 
             <p className={ styles['simplex__paragraph'] }>Shop confidently at Cryptospace – powered by <a className={ styles['simplex__link'] }  href="https://www.simplex.com/">Simplex</a> for top-tier financial security. Purchase with peace of mind!</p>   
@@ -39,7 +39,7 @@ return(
           <div className={ styles['simplex__section'] }>
             <button className={ styles['simplex__button'] }>Buy Now</button>
           </div>
-        </form>      
+        </div>      
       </section>
     </main>
   </SimplexProvider>
