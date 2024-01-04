@@ -26,10 +26,6 @@ export default function RootLayout({children}) {
         <Navbar />
         {children}
         <Footer />
-        <script src='https://iframe.sandbox.test-simplexcc.com/form-sdk.js' type="text/javascript"></script>
-        <script>
-            window.simplex.createForm();
-        </script>
       </body>
     </html>
   )
