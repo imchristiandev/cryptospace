@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react'
 
 import { useFetch } from '@/hooks/useFetch'
-
 import {ChevronDownIcon, ChevronUpIcon, ArrowPathIcon} from '@heroicons/react/24/outline'
+import { cleanCurrencyData } from '@/utils/cleanCurrencyData'
 import styles from '@/styles/buycrypto.module.css'
+
 
 const CurrencySelector = ({ currency, endpoint, method }) => {
   const { data, loading } = useFetch( endpoint, method );
@@ -18,25 +19,9 @@ const CurrencySelector = ({ currency, endpoint, method }) => {
 
   useEffect(() => {
     if(!loading) {
-    if (currency === 'CRYPTO') {
-      setCleanData(
-        data?.map((dataItem) => ({
-          ticker: dataItem.ticker_symbol,
-          currency: dataItem.networks[0]
-        }))
-      )
-    } else {
-      setCleanData(
-        data?.map((dataItem) => ({
-            ticker: dataItem.ticker_symbol,
-            min_amount: dataItem.min_amount,
-            max_amount: dataItem.max_amount
-          }
-        ))
-      )
-    }
+      cleanCurrencyData(currency, data, setCleanData)
   }
-  }, [loading])
+  }, [currency, data, loading])
 
 
   const handleSelection = (event) => {
@@ -62,7 +47,10 @@ const CurrencySelector = ({ currency, endpoint, method }) => {
             }
           </button>
       </div>
-      <div className={ active ? `${styles['simplex__selection']} ${styles['simplex__selection--active']}` : styles['simplex__selection'] }>
+      <div className={ 
+        active ? 
+          `${styles['simplex__selection']} ${styles['simplex__selection--active']}` : 
+          styles['simplex__selection'] }>
         <div className={ styles['simplex__list'] }>
           {
             cleanData?.map(data => (currency === 'CRYPTO') ? 
