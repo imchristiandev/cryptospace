@@ -14,6 +14,9 @@ return(
           </header>
           <div className={ styles['simplex__section'] }>
             <label className={ styles['simplex__label'] }>I want to buy</label>
+            { 
+              // TODO: upgrade the endpoint to the production one
+            }
             <SimplexCurrencySelector
               currency = 'CRYPTO'
               endpoint = 'https://sandbox.test-simplexcc.com/v2/supported_crypto_currencies?public_key=pk_test_e56309b0-6f63-4bb9-ad5b-f4a738d2316e'
@@ -22,6 +25,9 @@ return(
           </div>
           <div className={ styles['simplex__section'] }>
             <label className={ styles['simplex__label'] }>I want to spend</label>
+            { 
+              // TODO: upgrade the endpoint to the production one
+            }
             <SimplexCurrencySelector 
               currency = 'FIAT'
               endpoint = 'https://sandbox.test-simplexcc.com/v2/supported_fiat_currencies?public_key=pk_test_e56309b0-6f63-4bb9-ad5b-f4a738d2316e'

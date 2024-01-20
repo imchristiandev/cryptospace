@@ -114,11 +114,15 @@
     border-radius   : 4px;
     box-shadow      : 2px 2px 2px rgba(65, 65, 65, 0.154);
     color           : black;
-    display         : flex;
+    display         : block;
     font-size       : 12px;
-    justify-content : center;
-    transition      : all ease-in-out 0.3s;
+    overflow        : hidden;
     padding         : 4px 12px;
+    text-align      : center;
+    text-overflow: ellipsis;
+    transition      : all ease-in-out 0.3s;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .simplex__selector {
@@ -181,23 +185,33 @@
     height: 100%;
 }
 
+/* ? Custom scrollbar */
 .simplex__list::-webkit-scrollbar {
     width: 8px;
 }
-  
-/* Track */
+
 .simplex__list::-webkit-scrollbar-track {
 background: #f1f1f1; 
 }
 
-/* Handle */
+
 .simplex__list::-webkit-scrollbar-thumb {
 background: #888; 
 }
 
-/* Handle on hover */
+
 .simplex__list::-webkit-scrollbar-thumb:hover {
 background: #555; 
+}
+
+/* ? Simplex list item styles */
+.simplex__list-item {
+    cursor: pointer;
+    padding: 12px;
+}
+
+.simplex__list-item:hover {
+    background-color: #e5e5e5;
 }
 
 .rotate {
