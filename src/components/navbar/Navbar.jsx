@@ -62,6 +62,9 @@ export const Navbar = () => {
             <li className={styles.menuItem}>
               <a href="/policy">Privacy Policy</a>
             </li>
+            <li className={styles.menuItem}>
+              <a href="/services">Services</a>
+            </li>
           </ul>
         )}
       </div>

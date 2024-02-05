@@ -1,0 +1,248 @@
+.main {
+    display            : flex;
+    flex-direction     : column;
+    align-items        : center;
+    justify-content    : center;
+    padding-inline     : 12%;
+    max-width          : 100%;
+    /* height          : 100vh; */
+    /* background-image: url("../../public/fondoex.jpg"); */
+    background-repeat  : no-repeat;
+    background-size    : cover;
+}
+
+.mask {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 100%;
+    height        : 100%;
+}
+
+.mask h3 {
+    color: #fff;
+}
+
+.servicesHeader {
+    display        : flex;
+    flex-direction : column;
+    align-items    : flex-start;
+    justify-content: center;
+    margin-top     : 200px;
+    width          : 100%;
+}
+
+.serviceTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.serviceSubtitle {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.gridServices {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap             : 40px;
+    margin-top           : 130px;
+    width                : 100%;
+}
+
+.card {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : start;
+    justify-content : flex-start;
+    position        : relative;
+    padding         : 32px;
+    min-height      : 256px;
+    background-color: #1E1E1E;
+    border-radius   : 20px;
+    box-shadow      : 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition      : all 0.3s ease-in-out;
+}
+
+.card:hover {
+    background-color: #363636;
+}
+
+.cardIcon {
+    position: absolute;
+    top     : 32px;
+    right   : 32px;
+    width   : 45px;
+    height  : 45px;
+}
+
+.card h3 {
+    color         : #396BC3;
+    font-size     : 24px;
+    margin-bottom : 26px;
+    text-transform: uppercase;
+}
+
+.card P {
+    font-size    : 18px;
+    margin-bottom: 10px;
+    line-height  : 1.3;
+}
+
+.cardBtn {
+    border     : none;
+    background : none;
+    margin-top : 22px;
+    color      : #fff;
+    font-size  : 18px;
+    font-family: 'Inter', sans-serif;
+    cursor     : pointer;
+    transition : all 0.3s ease-in-out;
+}
+
+.cardBtn:hover {
+    color          : #FBAF40;
+    text-decoration: underline;
+}
+
+.backgroundModal {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    padding         : 0 4%;
+    backdrop-filter : blur(6px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index         : 1;
+    transition      : all 0.25s ease-in-out;
+}
+
+.cardModal {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : start;
+    justify-content : flex-start;
+    position        : relative;
+    width           : 100%;
+    max-width       : 892px;
+    padding         : 32px;
+    max-height      : 100%;
+    margin          : 0 auto;
+    background-color: #1E1E1E;
+    border-radius   : 20px;
+    box-shadow      : 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cardModal h3 {
+    color         : #396BC3;
+    font-size     : 32px;
+    margin-bottom : 26px;
+    text-transform: uppercase;
+}
+
+.cardModal P {
+    font-size    : 22px;
+    margin-bottom: 10px;
+    line-height  : 1.8;
+    font-weight  : 500;
+}
+
+.closeModal {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    font-size       : 32px;
+    position        : absolute;
+    top             : 32px;
+    right           : 32px;
+    width           : 35px;
+    height          : 35px;
+    background-color: #8C8C8C;
+    border-radius   : 50%;
+    border          : none;
+    cursor          : pointer;
+    transition      : all 0.3s ease-in-out;
+}
+
+.closeModal:hover {
+    background-color: #5e5e5e;
+}
+
+.lineModal {
+    width     : 100%;
+    height    : 1px;
+    background: rgb(95, 95, 95);
+    position  : absolute;
+    top       : 100px;
+    left      : 0;
+    right     : 0;
+    margin    : 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.imageModal {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+
+}
+
+.bulletPoint {
+    display         : inline-block;
+    width           : 14px;
+    height          : 14px;
+    border-radius   : 50%;
+    background-color: #FBAF40;
+    margin-right    : 10px;
+}
+
+.descriptionContainer {
+    margin-top: 14px;
+}
+
+.descriptionModal {
+    line-height: 1.2 !important;
+}
+
+.serviceDescription {
+    line-height: 1.3;
+}
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1120px) {
+    .main {
+        padding-inline: 6%;
+    }
+
+    .servicesHeader {
+        margin-top: 140px;
+    }
+
+    .gridServices {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .descriptionModal {
+        font-size: 18px !important;
+    }
+
+    .serviceSubtitle {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 830px) {
+    .imageModal {
+        display: none;
+    }
+}
