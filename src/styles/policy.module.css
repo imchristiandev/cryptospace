@@ -2,3 +2,9 @@
     margin-top: 10rem;
     padding-inline: 10%;
 }
+
+.main h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-top: 1rem;
+}
