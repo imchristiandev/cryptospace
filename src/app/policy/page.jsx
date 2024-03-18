@@ -54,7 +54,7 @@ export default function Policy() {
         other related legislation.
       </p>
       <p>
-        CRYPTOSPACE undertakes to process the customer's and user's personal
+        CRYPTOSPACE undertakes to process the customer&apos;s and user&apos;s personal
         data only for the following purposes:
       </p>
       <p>
@@ -62,15 +62,15 @@ export default function Policy() {
         relationship; (b) Complying with all of the Money Laundering, Terrorist
         Financing and Transfer of Funds (Information on the Payer) Regulations
         2017 and any other applicable legislation. CRYPTOSPACE will not process
-        Users' personal data without the User's prior permission for purposes
+        Users&apos; personal data without the User&apos;s prior permission for purposes
         other than those previously stated.
       </p>
       <p>
-        CRYPTOSPACE will ensure users' compliance with applicable national data
+        CRYPTOSPACE will ensure users&apos; compliance with applicable national data
         protection laws at all times during the term of the business
         relationship. It is noted and should be noted that in the event of a
         conflict between the data protection law of the United Kingdom and the
-        data protection law of the customer's country of domicile, the law of
+        data protection law of the customer&apos;s country of domicile, the law of
         the country that provides greater protection for the privacy and
         personal data of users will be preferred.
       </p>
@@ -78,7 +78,7 @@ export default function Policy() {
       <p>
         The following types of Personal Data will be shared by users during the
         Term of the business relationship: name, address, date of birth,
-        identification document numbers (such as driver's license or passport),
+        identification document numbers (such as driver&apos;s license or passport),
         photograph of the Customers (if natural persons) and of the directors
         and beneficial owners of the customer (if legal entities). Personal Data
         shared by customers and users will not be used for purposes other than
@@ -156,7 +156,7 @@ export default function Policy() {
       <h3>DATA RETENTION AND DELETION</h3>
       <p>
         CRYPTOSPACE will not retain or process Personal Data shared before or
-        after user's business relationship, however, CRYPTOSPACE will continue
+        after user&apos;s business relationship, however, CRYPTOSPACE will continue
         to retain Personal Data shared in accordance with applicable regulatory,
         professional and/or industry retention periods.
       </p>
@@ -179,7 +179,7 @@ export default function Policy() {
         Article 30 of the GDPR.
       </p>
       <p>
-        CRYPTOSPACE may not transfer the Customer's Shared Personal Data to a
+        CRYPTOSPACE may not transfer the Customer&apos;s Shared Personal Data to a
         third party located outside the EEA, with exception of the following
         requirements: (a) The third party complies with the provisions of
         articles 26 of the RGPD (in case the third party is a joint controller);
