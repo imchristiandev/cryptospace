@@ -1,8 +1,12 @@
 import styles from '@/styles/buycrypto.module.css'
 import SimplexCurrencySelector from './SimplexCurrencySelector'
 import { SimplexProvider } from '@/context/SimplexContext'
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Buycrypto() {
+
+const userId = uuidv4()
+
 return(
   <SimplexProvider>
     <main className={ styles['simplex__main'] }>

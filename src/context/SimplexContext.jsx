@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const SimplexContext = createContext();
 
@@ -11,6 +11,9 @@ const SimplexProvider = ({ children }) => {
   const [fiatTicker, setFiatTicker] = useState("CUR")
   const [fiatValue, setFiatValue] = useState(0)
 
+  useEffect(() => {
+    console.log('Fiat Value', fiatValue)
+  }, [fiatValue]);
 //* transactionValue is the value of the transaction
 
   const handleSelection = (key) => {
@@ -29,7 +32,6 @@ const SimplexProvider = ({ children }) => {
     }
   };
 
-  // ?
   const data = {
     active,
     crypto,
