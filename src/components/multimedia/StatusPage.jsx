@@ -7,7 +7,7 @@ export const StatusPage = ({status, onAction}) => {
       <div className={ styles.main }>
         <div className={ styles.content }>
           <h2 className={ styles.text }>
-            Loanding ...
+            Loading ...
           </h2>
         </div>
       </div>
